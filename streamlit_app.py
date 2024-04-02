@@ -9,7 +9,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import mean_absolute_error
 
 # Your Alpha Vantage API key
-api_key = ''  # Add your API key here
+api_key = st.secrets["api_key"]
 
 # Function to retrieve stock data
 def get_stock_data(symbol, interval='daily'):
