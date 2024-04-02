@@ -7,7 +7,7 @@ from sklearn.preprocessing import StandardScaler
 # Load the trained model
 @st.cache(allow_output_mutation=True)
 def load_nn_model():
-    with open("stock_prediction_MAPE.pkl", "rb") as f:
+    with open("https://github.com/Eliasmarcet91/stock_MAPE_predictor/raw/master/stock_prediction_MAPE.pkl", "rb") as f:
         model = pickle.load(f)
     return model
 
