@@ -10,7 +10,7 @@ from sklearn.metrics import mean_absolute_error
 
 # Your Alpha Vantage API key
 api_key = st.secrets["api_key"]
-
+#api_key = st.secrets["api_key2"]
 # Function to retrieve stock data
 def get_stock_data(symbol, interval='daily'):
     function = 'TIME_SERIES_DAILY' if interval == 'daily' else 'TIME_SERIES_MONTHLY'
