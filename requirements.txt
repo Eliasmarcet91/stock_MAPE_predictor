@@ -1,6 +1,6 @@
 streamlit==1.26.0
-plotly==4.14.3
-pandas==1.2.2
-numpy==1.20.1
+plotly
+pandas
+numpy
 tensorflow
-scikit-learn==0.24.1
+scikit-learn
