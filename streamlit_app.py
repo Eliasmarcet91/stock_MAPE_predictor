@@ -95,8 +95,8 @@ if symbol:
         st.write("Predicted price for the next day:", predicted_price_next_day)
 
         # Measure the level of accuracy of the prediction
-        mape = mean_absolute_error(y_test, predicted_prices) / np.mean(y_test)
-        st.write("Mean Absolute Percentage Error (MAPE): {:.2f}%".format(mape * 100))
+       # mape = mean_absolute_error(y_test, predicted_prices) / np.mean(y_test)
+        #st.write("Mean Absolute Percentage Error (MAPE): {:.2f}%".format(mape * 100))
 
     else:
         st.write("Failed to retrieve stock data")
