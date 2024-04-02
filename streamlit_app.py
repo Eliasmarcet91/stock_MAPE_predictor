@@ -31,7 +31,7 @@ def main():
     symbol = st.text_input("Enter the stock symbol (e.g., AAPL):")
 
     # Load the model
-    model = load_nn_model()
+    model = load_model()
 
     if st.button("Predict"):
         # Get the input data (replace this with your actual input data)
