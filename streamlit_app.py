@@ -24,20 +24,16 @@ def predict_prices(model, data):
     predictions = model.predict(scaled_data)
     return predictions
 
-def main():
-    st.title("Stock Price Prediction App")
+st.title("Stock Price Prediction App")
 
     # Input stock symbol from the user
-    symbol = st.text_input("Enter the stock symbol (e.g., AAPL):")
+symbol = st.text_input("Enter the stock symbol (e.g., AAPL):")
 
     # Load the model
-    model = load_model()
+model = load_model()
 
-    if st.button("Predict"):
+if st.button("Predict"):
         # Get the input data (replace this with your actual input data)
-        input_data = np.random.rand(1, num_features)  # Example random data
-        prediction = predict_prices(model, input_data)
-        st.write("Predicted Price:", prediction)
-
-if __name__ == "__main__":
-    main()
+    input_data = np.random.rand(1, num_features)  # Example random data
+    prediction = predict_prices(model, input_data)
+    st.write("Predicted Price:", prediction)
