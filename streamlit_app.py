@@ -6,9 +6,9 @@ from sklearn.preprocessing import StandardScaler
 
 # Load the trained model
 @st.cache(allow_output_mutation=True)
-def load_nn_model():
-    with open("stock_prediction_MAPE.pkl", "rb") as f:
-        model = pickle.load(f)
+def load_model():
+    with open('stock_prediction_MAPE.pkl', 'rb') as file:
+        model = pickle.load(file)
     return model
 
 # Function to preprocess input data
